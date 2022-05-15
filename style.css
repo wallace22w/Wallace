@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+:root {
+    --COR1: #BFAB9F;
+    --COR2: #402A22;
+    --COR3: #735448;
+    --COR4: #A68D85;
+    --COR5: #0D0D0D;
+
+
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+    --font-destaque: 'Righteous', cursíve;
+    --font-android: 'android', cursíve;
+}
+        /* corpo todo */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: var(--font-padrao);
+}
+
+
+        /* cabecalho */
+
+.cabecalho {
+    background-image: linear-gradient(to bottom, var(--COR4), var(--COR2));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cabecalho  h1 {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.185);
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;    
+}
+
+.cabecalho p {
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.185);
+}
+
+.cabecalho3 {
+    background-image: linear-gradient(to bottom, rgba(125, 99, 90, 0.993),rgba(107, 53, 43, 0.616));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cabecalho3 h1 {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.185);
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-top: 30px; 
+}
+
+
+            /* menu */
+
+.menu {
+    background-color: var(--COR2);
+    padding: 10px;
+    box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.363); 
+}
+
+.menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--COR1);
+    border-radius: 5px;
+    font-family: var(--font-destaque);
+    font-weight: bolder;
+    font-size: 1.0em;
+    transition-duration: 0.5s;
+}
+
+.menu a:hover {
+    background-color: var(--COR3);
+    color: var(--COR5);
+}
+
+
+         /* Texto */
+
+.texto {
+    background-color: white;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.678);;
+}
+
+.texto h2 {
+    font-family: var(--font-android);
+    font-weight: normal;
+    padding-left: 40px;
+    background-image: linear-gradient(to right, var(--COR2), transparent);
+    }
+
+.h2centro {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: var(--font-android);
+    font-weight: normal;
+    padding-left: 40px;
+    background-color: rgba(247, 47, 12, 0.932);
+    text-align: center;
+
+}
+
+.h2diferente h1 {
+    font-family: var(--font-android);
+    font-weight: normal;
+    padding-left: 30px;
+    font-size: 2em;
+    line-height: 1em;
+
+
+}
+
+
+.texto  p {
+    text-indent: 30px;
+    font-size: 1em;
+    text-align: justify;
+    margin: 15px 0px;
+    line-height: 2em;
+
+}
+
+        /* Titulo do texo*/
+
+.titulo1 { 
+    font-family: var(--font-android);
+    color: var(--COR2);
+    font-size: 1.8em;
+    font-weight: normal;
+
+}
+
+        /* imagem */
+
+.texto img {
+    width: 100%;
+}
+
+.texto img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.imagem4 {
+    height: 80%;
+    display: block;
+    margin-top: 65px;
+    margin-bottom: 60px;
+}
+
+
+        /* video */
+
+.video {
+    background-color: var(--COR2);
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px; 
+    padding-bottom: 58%;
+    position: relative;
+}
+
+.video  iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+        /* Lista */
+
+.lista {
+    background-color: var(--COR1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    list-style-position: inside;
+}
+
+.lista h3 {
+    background-color: var(--COR2);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    
+    }
+
+.lista p {
+    padding: 10px;
+}
+
+.tabela {
+    columns: 2;
+    padding-left: 100px;
+    padding-right: 50px;
+    line-height: 1.5em;
+}
+
+.tabela2 {
+    columns: 2;
+    line-height: 2em;
+    list-style-position: inside;
+}
+
+        /* rodape */
+
+.rodape {
+    margin-top: 35px;
+    background-color: var(--COR3);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.rodape {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+
+        /* contatos */
+
+
+
+
+.lista10 h2 {
+   border-radius: 5px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.lista10 li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style-position: inside;
+}
+
+
+
+.container {
+    display:flex;
+    width: 180px;
+    height: 200px;
+    align-items: center;
+}
+
+.menu2 {
+    background-color: var(--COR2);
+    padding: 10px;
+    box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.363); 
+}
+
+.menu2 a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--COR1);
+    border-radius: 5px;
+    font-family: var(--font-destaque);
+    font-weight: bolder;
+    font-size: 1.0em;
+    transition-duration: 0.5s;
+}
+
+.menu2 a:hover {
+    background-color: var(--COR3);
+    color: var(--COR5);
+}
+
+    /*wwwwww*/
+
+
+    .menu3 {
+        background-color: var(--COR3);
+        padding: 10px;
+        box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.163); 
+    }
+    
+    .menu3 a {
+        padding: 10px;
+        text-decoration: none;
+        color: var(--COR1);
+        border-radius: 5px;
+        font-family: var(--font-destaque);
+        font-weight: bolder;
+        font-size: 1.0em;
+        transition-duration: 0.5s;
+    }
+    
+    .menu3 a:hover {
+        background-color: var(--COR3);
+        color: var(--COR5);
+    }
+
+            /*wwwww*/
+
+
+.menu4 {
+     background-color: var(--COR3);
+    padding: 10px;
+    box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.363); 
+}
+            
+.menu4 a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--COR1);
+    border-radius: 5px;
+    font-family: var(--font-destaque);
+    font-weight: bolder;
+    font-size: 1.0em;
+    transition-duration: 0.5s;
+}
+            
+.menu4 a:hover {
+    background-color: var(--COR3);
+    color: var(--COR5);
+}
